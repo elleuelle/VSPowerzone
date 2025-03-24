@@ -20,14 +20,21 @@ document.querySelectorAll("nav ul li a").forEach(anchor => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.getElementById("hamburger");
+    const menuToggle = document.getElementById("menu-toggle");
     const navMenu = document.getElementById("nav-menu");
 
-    // Toggle the menu on click
-    hamburger.addEventListener("click", function () {
-        navMenu.classList.toggle("active");
+    menuToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("active"); // Toggle menu visibility
+    });
+
+    // ✅ Close menu when clicking outside (Mobile UX Fix)
+    document.addEventListener("click", function (event) {
+        if (!menuToggle.contains(event.target) && !navMenu.contains(event.target)) {
+            navMenu.classList.remove("active");
+        }
     });
 });
+
 
 
 // ✅ Button Hover Effect (Glowing Animation)
