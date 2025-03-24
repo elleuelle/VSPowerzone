@@ -76,19 +76,6 @@ document.addEventListener("scroll", () => {
         }
     });
 });
-window.addEventListener("scroll", function () {
-    let navbar = document.querySelector("nav");
-    if (window.scrollY > 50) {
-        navbar.style.background = "black"; /* Solid color when scrolling */
-    } else {
-        navbar.style.background = "rgba(0, 0, 0, 0.5)"; /* Transparent at top */
-    }
-});
-
-
-
-
-
 
 let slideIndex = 0; // Start at the first slide
 

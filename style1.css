@@ -21,6 +21,7 @@ nav {
   background-color: rgba(2, 2, 14, 0.3); /* Transparent */
   backdrop-filter: blur(10px); /* Blurry effect */
   z-index: 1000;
+  transition: background-color 0.3s ease;
 }
 /* Hide hamburger icon on desktop */
 .hamburger {
@@ -37,54 +38,45 @@ nav ul {
   margin: 0 auto; /* Centers the navigation menu */
   padding: 0;
 }
-/* Hide Hamburger on Desktop */
-.hamburger {
-  display: none; /* Hidden by default */
-}
 
 /* Show only on mobile */
 @media screen and (max-width: 768px) {
-  .nav-menu {
-    display: none; /* Hide menu by default on mobile */
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #000;
-  }
-
-  .nav-menu.active {
-    display: flex; /* Show menu when active */
-  }
-
+  /* Hamburger menu styles */
   .hamburger {
-    display: block; /* Show hamburger only on mobile */
+    display: block; /* Show only on small screens */
+    font-size: 40px;
+    color: white;
     cursor: pointer;
-  }
-}
-
-
-  nav ul {
-    display: none; /* Hide menu initially */
-    flex-direction: column;
-    background: black;
     position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
+    bottom: 20px; /* Adjusted from 10px to give more space */
+    left: 50%; /* Centers the hamburger icon horizontally */
+    transform: translateX(-50%); /* Centers the hamburger icon */
+  }
+
+  /* Navigation menu (hidden initially) */
+  nav ul {
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    background: #050536; /* Dark background */
+    position: absolute;
+    top: 60px; /* Distance from top of screen */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
     text-align: center;
     padding: 20px 0;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; /* Smooth transition for show/hide */
   }
 
+  /* Active state (when the menu is toggled) */
   nav ul.active {
     display: flex; /* Show menu when active */
   }
 
+  /* Navbar list items */
   nav ul li {
-    padding: 0 15px;
+    padding: 10px 0; /* Vertical padding */
   }
+}
 
 
 
@@ -106,7 +98,7 @@ nav ul li a:hover {
 }
 /* Navbar Logo */
 .logo img {
-  height: 250px;
+  height: 230px;
   cursor: pointer;
 }
 
