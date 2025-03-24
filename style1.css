@@ -261,7 +261,7 @@ form {
 }
 
 .prev:hover, .next:hover {
-  background-color: rgb(39, 143, 248);
+  background: linear-gradient(90deg, #00cc00, #fa4e04);
 }
 
 
