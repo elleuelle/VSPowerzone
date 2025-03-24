@@ -23,17 +23,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
     const navMenu = document.getElementById("nav-menu");
 
+    // Toggle menu visibility when the hamburger is clicked
     menuToggle.addEventListener("click", function () {
-        navMenu.classList.toggle("active"); // Toggle menu visibility
+        navMenu.classList.toggle("active");
     });
 
-    // ✅ Close menu when clicking outside (Mobile UX Fix)
+    // Close the menu when clicking outside (Mobile UX Fix)
     document.addEventListener("click", function (event) {
+        // Check if the click happened outside the menu or the hamburger icon
         if (!menuToggle.contains(event.target) && !navMenu.contains(event.target)) {
             navMenu.classList.remove("active");
         }
     });
+
+    // Prevent click event propagation on the menu itself (prevents closing when clicking inside)
+    navMenu.addEventListener("click", function (event) {
+        event.stopPropagation();
+    });
 });
+
 
 
 
@@ -76,6 +84,11 @@ window.addEventListener("scroll", function () {
         navbar.style.background = "rgba(0, 0, 0, 0.5)"; /* Transparent at top */
     }
 });
+
+
+
+
+
 
 let slideIndex = 0; // Start at the first slide
 
