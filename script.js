@@ -112,7 +112,7 @@ function moveSlide(n) {
 // Set up auto-slide every 5 seconds (optional)
 setInterval(() => {
     moveSlide(1); // Move to the next slide automatically
-}, 5000); // 5 seconds interval
+}, 8000); // 5 seconds interval
 
 // Initially show the first slide
 showSlide(slideIndex);
