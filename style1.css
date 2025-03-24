@@ -362,6 +362,15 @@ html {
   opacity: 0.7;
   background: linear-gradient(90deg, #0b540b, #02ff02);
 }
+.fa-gmail:hover {
+  opacity: 0.7;
+  background: linear-gradient(90deg, #01ff01, #f11401, #075291);
+}
+.fa-gmail {
+  background: linear-gradient(90deg, #08053a, #45ff07);
+  color: white;
+}
+
 .fa-facebook {
   background: linear-gradient(90deg, #08053a, #45ff07);
   color: white;
@@ -385,3 +394,22 @@ html {
   color: white;
 }
 
+/* Gmail Button Styling */
+.fa-envelope {
+  background: linear-gradient(90deg, #08053a, #45ff07);
+  color: white;
+  line-height: 50px;
+  display: inline-block;
+  padding: 20px;
+  font-size: 60px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 3px;
+  border-radius: 49%;
+}
+
+.fa-envelope:hover {
+  background: linear-gradient(90deg, #ffd501,#0b540b ,#fd2905, #006fff);
+  opacity: 0.7;
+}
