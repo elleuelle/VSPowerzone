@@ -19,28 +19,35 @@ document.querySelectorAll("nav ul li a").forEach(anchor => {
     });
 });
 
+// JavaScript to change navbar background on scroll
+window.addEventListener('scroll', function () {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 0) {
+        nav.classList.add('scrolled'); // Add the 'scrolled' class when scrolling
+    } else {
+        nav.classList.remove('scrolled'); // Remove the 'scrolled' class when at the top
+    }
+});
+
+// Toggle menu visibility when hamburger is clicked
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
     const navMenu = document.getElementById("nav-menu");
 
-    // Toggle menu visibility when the hamburger is clicked
     menuToggle.addEventListener("click", function () {
-        navMenu.classList.toggle("active");
+        navMenu.classList.toggle("active"); // Toggle menu visibility
     });
 
-    // Close the menu when clicking outside (Mobile UX Fix)
+    // Close menu when clicking outside (Mobile UX Fix)
     document.addEventListener("click", function (event) {
-        // Check if the click happened outside the menu or the hamburger icon
         if (!menuToggle.contains(event.target) && !navMenu.contains(event.target)) {
             navMenu.classList.remove("active");
         }
     });
-
-    // Prevent click event propagation on the menu itself (prevents closing when clicking inside)
-    navMenu.addEventListener("click", function (event) {
-        event.stopPropagation();
-    });
 });
+
+
+   
 
 
 
