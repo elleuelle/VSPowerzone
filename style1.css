@@ -1,7 +1,7 @@
 /* header */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Fira Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   background: linear-gradient(90deg, #010110, #010117, #063d02);
   color: white;
   margin: 0;
@@ -136,7 +136,7 @@ nav ul li a:hover {
 }
 
 #home p {
-  font-size: 2.9rem;
+  font-size: 1.9rem;
   margin: 20px 0;
 }
 
