@@ -31,7 +31,16 @@ nav ul {
   margin: 0 auto; /* Centers the navigation menu */
   padding: 0;
 }
-
+/* Mobile Navbar */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul li {
+    width: 100%;
+  }
+}
 nav ul li a {
   text-decoration: none;
   color: #45ff07;
@@ -320,3 +329,4 @@ html {
   background: linear-gradient(90deg, #08053a, #45ff07);
   color: white;
 }
+
