@@ -176,7 +176,7 @@ form {
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 0 15px #45ff07;
-  width: 30%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -258,10 +258,6 @@ form {
 }
 
 
-
-
-
-
 input, textarea {
   width: 100%;
   padding: 10px;
@@ -269,7 +265,7 @@ input, textarea {
   background: #fffefe;
   color: #09041d;
   border: 1px solid #00ff00;
-  border-radius: 5px;
+  border-radius: 100px;
 }
 
 button {
