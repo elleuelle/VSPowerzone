@@ -40,10 +40,15 @@ nav.scrolled {
 /* Hide hamburger icon on desktop */
 .hamburger {
   display: none;
-  font-size: 50px;
+  font-size: 40px;
+  position: absolute;
   cursor: pointer;
   color: white;
-}
+   right: 50px; /* Move the hamburger to the right */
+    top: 50%; /* Vertically center the icon */
+    transform: translateY(-50%); /* Center the icon vertically */
+  }
+
 
 /* Show only on mobile */
 /* Show Hamburger and Nav Menu on Mobile */
@@ -63,6 +68,8 @@ nav.scrolled {
 
   .hamburger {
     display: block; /* Show hamburger only on mobile */
+
+
     cursor: pointer;
   }
 
