@@ -22,7 +22,13 @@ nav {
   backdrop-filter: blur(10px); /* Blurry effect */
   z-index: 1000;
 }
-
+/* Hide hamburger icon on desktop */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
 /* Navbar Links */
 nav ul {
   list-style: none;
@@ -31,14 +37,30 @@ nav ul {
   margin: 0 auto; /* Centers the navigation menu */
   padding: 0;
 }
-/* Mobile Navbar */
+/* Responsive Navbar */
 @media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    text-align: center;
+  .hamburger {
+    display: block; /* Show hamburger on mobile */
   }
-  nav ul li {
+
+  nav ul {
+    display: none; /* Hide menu initially */
+    flex-direction: column;
+    background: black;
+    position: absolute;
+    top: 60px;
+    right: 0;
     width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  nav ul.active {
+    display: flex; /* Show when active */
+  }
+
+  nav ul li {
+    padding: 10px 0;
   }
 }
 nav ul li a {
