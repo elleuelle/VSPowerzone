@@ -37,14 +37,24 @@ nav ul {
   margin: 0 auto; /* Centers the navigation menu */
   padding: 0;
 }
-/* ✅ Responsive Navbar */
+/* Hide Hamburger on Desktop */
+.hamburger {
+  display: none; /* Hidden by default */
+}
+
+/* Show only on mobile */
 @media (max-width: 768px) {
   .hamburger {
-    display: block; /* Show hamburger on mobile */
+    display: block; /* Show only on small screens */
     font-size: 30px;
     color: white;
     cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
   }
+
 
   nav ul {
     display: none; /* Hide menu initially */
