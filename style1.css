@@ -60,7 +60,7 @@ nav.scrolled {
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #000;
+    background: linear-gradient(90deg, #010110, #010117, #063d02);
   }
   #nav-menu.active {
     display: flex; /* Show menu when active */
