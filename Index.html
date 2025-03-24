@@ -172,7 +172,18 @@
     menuToggle.addEventListener("click", () => {
         navMenu.classList.toggle("active");
     });
+    // Get all the menu items and the hamburger menu
+    const menuItems = document.querySelectorAll('#nav-menu li a');
+    const menu = document.getElementById('nav-menu');
+
+    // Add click event listener to each menu item
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            menu.classList.remove('active'); // Close the menu when a link is clicked
+        });
+    });
 </script>
+
 
 
 
