@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSPowerzone - Fitness and Nutrition</title>
+    <link rel="stylesheet" href="style1.css"> <!-- Link to external CSS file -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Splide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splidejs@3.0.0/dist/css/splide.min.css">
+
+    <script src="script.js"></script>
+
+
+</head>
+<body>
+
+<!-- Nav Bar -->
+<header>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="vsp1.png" alt="VSPowerzone Logo" class="logo">
+            </a>
+
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#subscriptions">Subscriptions</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- Hero -->
+<section id="home">
+    <h1>Welcome to VSPowerzone</h1>
+    <p>Build your perfect body with our premium supplements, and fitness accessories. Join us today and unlock your full potential!</p>
+    <a href="#subscriptions" class="btn">Learn more about us</a>
+
+</section>
+<!-- Membership -->
+<section id="subscriptions">
+    <h2>Nos abonnements</h2>
+    <p>Choisissez la formule qui vous convient.</p>
+    <ul>
+        <li> - $$/mois</li>
+        <li> - $$</li>
+        <li>$$</li>
+    </ul>
+</section>
+
+<!-- Products -->
+<section id="products">
+    <h2>Nos produits</h2>
+    <p>Order your supplements and fitness accessories.</p>
+    <ul>
+        <li>Protéine Whey - $$</li>
+        <li>Bandes de résistance - $$</li>
+        <li>Shaker - $$</li>
+    </ul>
+</section>
+
+<!-- Gallery -->
+<section id="gallery">
+    <h2>Gallery</h2>
+    <p>Découvrez notre salle de sport et nos équipements.</p>
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="girl.jpeg" alt="Girl Working Out">
+            </div>
+
+            <div class="carousel-slide">
+                <img src="home.jpeg" alt="Home Gym">
+            </div>
+            <div class="carousel-slide">
+                <img src="gym.jpeg" alt="Sleep Gym">
+            </div>
+            <div class="carousel-slide">
+                <img src="gym3.jpeg" alt="Home Gym">
+            </div>
+            <div class="carousel-slide">
+                <img src="boy.jpeg" alt="Boy Working Out">
+            </div>
+            <div class="carousel-slide">
+                <img src="thegym.jpg" alt="Gym">
+            </div>
+
+
+        </div>
+
+        <!-- Navigation Arrows -->
+        <span class="prev" onclick="moveSlide(-1)">&#10094;</span>
+        <span class="next" onclick="moveSlide(1)">&#10095;</span>
+    </div>
+    <!-- Dots for carousel -->
+    <div class="carousel-dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+</section>
+
+
+
+    <!-- Contact -->
+<section id="contact">
+    <h2>Get in touch with us!</h2>
+    <form id="contactForm" action="https://formspree.io/f/mnnppaqd" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="number">Phone Number:</label>
+        <input type="number" id="number" name="number" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+    <p id="responseMessage"></p>
+</section>
+<!-- Footer -->
+<footer>
+    <div class="footer-links">
+        <a href="#subscriptions" class="footer-link">View subscriptions</a>
+        <a href="#products" class="footer-link">View Products</a>
+
+            <a href="https://wa.me/17864224302" target="_blank">Contact</a>
+        </div>
+
+        <div class="footer-icons">
+            <a href="https://wa.me/17864224302" class="fa fa-whatsapp" target="_blank"></a>
+            <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+
+
+       </div>
+
+        <p>&copy; 2024 VSPowerzone. All Rights Reserved. <br>
+
+
+        Designed by Elle </p>
+
+    </footer>
+
+
+</body>
+</html>
