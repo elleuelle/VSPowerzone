@@ -49,15 +49,15 @@ body {
 .product-container {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping if needed */
-    gap: 10px; /* Space between items */
-    padding: 10px;
+    gap: 20px; /* Space between items */
+    padding: 40px;
     overflow-x: auto;
 }
 
 /* Product Cards */
 .product {
     background: rgba(255, 255, 255, 0.08);
-    padding: 0px;
+    padding: 20px;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.2s ease-in-out;
