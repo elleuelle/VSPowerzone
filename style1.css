@@ -413,3 +413,67 @@ html {
   background: linear-gradient(90deg, #ffd501,#0b540b ,#fd2905, #006fff);
   opacity: 0.7;
 }
+.catalog-preview {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.catalog-preview h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.catalog-preview button {
+  background: #45ff07;
+  color: black;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.catalog-preview button:hover {
+  background: #fa4e06;
+}
+.catalog-preview {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.catalog-preview h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Grid layout for preview images */
+.catalog-preview-grid {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.preview-item img {
+  width: 120px; /* Adjust size */
+  height: 120px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Button */
+.catalog-preview button {
+  background: #45ff07;
+  color: black;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.catalog-preview button:hover {
+  background: #fa4e06;
+}

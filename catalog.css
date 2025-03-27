@@ -1,0 +1,251 @@
+/* header */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Fira Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    background: linear-gradient(90deg, #010110, #010117, #063d02);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+/* Transparent nav bar  */
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: -60px;
+}
+/* Navbar Logo */
+.logo img {
+    height: 150px;
+    cursor: pointer;
+}
+
+
+
+/* Product Grid */
+.product-container {
+    margin-left: 270px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjusted for better spacing */
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Category Wrapper - Ensures products in the same category align in a row */
+.category {
+    margin-bottom: 30px; /* Space between categories */
+}
+
+/* Category Title */
+.category h2 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+#home {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 80px 20px;
+    background: url('home.jpeg') no-repeat center center/cover;
+    position: relative;
+}
+
+
+/* Product Grid - Aligns products horizontally */
+.product-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if needed */
+    gap: 20px; /* Space between items */
+    padding: 10px;
+}
+
+/* Product Cards */
+.product {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    width: 200px; /* Fixed width for consistency */
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* Uniform Image Sizing */
+.product img {
+    width: 100%;
+    max-width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: none;
+}
+
+
+/* Fix for Grid Layout */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    padding: 20px;
+}
+
+/* Product Items */
+.product-item {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.07);
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-item:hover {
+    transform: scale(1.03);
+}
+
+/* Product Titles */
+.product-item h3 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(90deg, #02021c, #01cb01);
+    color: #fff9f9;
+}
+/* to make the scroll flow smoother */
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    background: linear-gradient(90deg, #0b540b, #07ea07);
+    color: #06062d;
+    padding: 15px 30px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #00cc00, #fa4e04);
+    box-shadow: 0 0 15px #00ff00;
+}
+
+
+/* Footer Links */
+.footer-links {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #fff9f9;
+    text-decoration: none;
+
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.footer-icons {
+    margin-top: 10px;
+}
+
+.footer-icons a {
+    margin: 0 10px;
+}
+
+.footer-icons img {
+    width: 30px;  /* Adjust icon size */
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.2); /* Hover effect */
+}
+.fa {
+    padding: 20px;
+    font-size: 60px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 3px;
+    border-radius: 49%;
+}
+
+.fa-facebook:hover {
+    opacity: 0.7;
+    background: linear-gradient(90deg, #01ff01, #0218ff);
+}
+.fa-instagram:hover {
+    opacity: 0.7;
+    background: linear-gradient(90deg, #01ff01, #ff00a6);
+}
+.fa-whatsapp:hover {
+    opacity: 0.7;
+    background: linear-gradient(90deg, #0b540b, #02ff02);
+}
+.fa-gmail:hover {
+    opacity: 0.7;
+    background: linear-gradient(90deg, #01ff01, #f11401, #075291);
+}
+.fa-gmail {
+    background: linear-gradient(90deg, #08053a, #45ff07);
+    color: white;
+}
+
+.fa-facebook {
+    background: linear-gradient(90deg, #08053a, #45ff07);
+    color: white;
+}
+.fa-tiktok{
+    background: linear-gradient(90deg, #08053a, #45ff07);
+    color: white;
+}
+.fa-tiktok:hover {
+    opacity: 0.7;
+    background: linear-gradient(90deg, #01ff01, #ff00a6);
+}
+
+.fa-instagram {
+    background: linear-gradient(90deg, #08053a, #45ff07);
+    color: white;
+}
+
+.fa-whatsapp {
+    background: linear-gradient(90deg, #08053a, #45ff07);
+    color: white;
+}
+
+/* Gmail Button Styling */
+.fa-envelope {
+    background: linear-gradient(90deg, #08053a, #45ff07);
+    color: white;
+    line-height: 50px;
+    display: inline-block;
+    padding: 20px;
+    font-size: 60px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 3px;
+    border-radius: 49%;
+}
+
+.fa-envelope:hover {
+    background: linear-gradient(90deg, #ffd501,#0b540b ,#fd2905, #006fff);
+    opacity: 0.7;
+}
