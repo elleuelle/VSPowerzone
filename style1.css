@@ -195,8 +195,15 @@ form {
   position: relative;
   width: 100%; /* Full width of the page */
   max-width: 800px; /* Set a max width */
-  margin: 0 auto;
+
   overflow: hidden; /* Hide images when they slide out */
+  margin-top: 10px;
+}
+#gallery h2 {
+  margin-top: -80px;
+}
+#carousel h3 {
+  margin-top: -80px;
 }
 
 /* Carousel */
@@ -220,6 +227,7 @@ form {
   height: 100%; /* Ensure images fill the entire height */
   object-fit: cover; /* Maintain aspect ratio while filling the slide */
 }
+
 
 /* Navigation Arrows */
 .prev, .next {
@@ -413,67 +421,35 @@ html {
   background: linear-gradient(90deg, #ffd501,#0b540b ,#fd2905, #006fff);
   opacity: 0.7;
 }
-.catalog-preview {
+.view-catalog-btn {
+  display: block;
   text-align: center;
-  margin-top: 50px;
-}
-
-.catalog-preview h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-
-.catalog-preview button {
-  background: #45ff07;
-  color: black;
-  padding: 12px 24px;
-  font-size: 18px;
+  margin: 40px auto; /* Adds space above and below the button */
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #00ff00, #020a1e);
+  color: #02021c;
   border: none;
   border-radius: 5px;
+  font-size: 14px;
   cursor: pointer;
-  transition: 0.3s;
+  width: 200px;
 }
 
-.catalog-preview button:hover {
-  background: #fa4e06;
-}
-.catalog-preview {
-  text-align: center;
-  margin-top: -80px;
+.view-catalog-btn:hover {
+  background-color: #fa4e06;
 }
 
-.catalog-preview h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-
-/* Grid layout for preview images */
 .catalog-preview-grid {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 15px;
-  margin-bottom: 10px;
+  margin-top: 60px; /* Space between the button and grid */
 }
 
 .preview-item img {
-  width: 95px; /* Adjust size */
-  height: 95px;
-  object-fit: contain;
-  border-radius: 20px;
-}
-
-/* Button */
-.catalog-preview button {
-  background: #45ff07;
-  color: black;
-  padding: 12px 94px;
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.catalog-preview button:hover {
-  background: #fa4e06;
+  width: 100%;  /* Make images responsive */
+  max-width: 200px;  /* Set a max width for uniformity */
+  height: 200px;  /* Fixed height for uniformity */
+  object-fit: contain; /* Ensure images fit nicely */
+  border-radius: 5px; /* Rounded corners for images */
 }
