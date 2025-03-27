@@ -456,8 +456,8 @@ html {
 }
 
 .preview-item img {
-  width: 120px; /* Adjust size */
-  height: 120px;
+  width: 80px; /* Adjust size */
+  height: 80px;
   object-fit: contain;
   border-radius: 8px;
 }
