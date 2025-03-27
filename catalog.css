@@ -12,7 +12,7 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    margin-left: -60px;
+    margin-left: -40px;
 }
 /* Navbar Logo */
 .logo img {
