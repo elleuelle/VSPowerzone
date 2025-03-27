@@ -22,14 +22,7 @@ body {
 
 
 
-/* Product Grid */
-.product-container {
-    margin-left: 270px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjusted for better spacing */
-    gap: 15px;
-    padding: 20px;
-}
+
 
 /* Category Wrapper - Ensures products in the same category align in a row */
 .category {
@@ -56,18 +49,19 @@ body {
 .product-container {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping if needed */
-    gap: 20px; /* Space between items */
+    gap: 10px; /* Space between items */
     padding: 10px;
+    overflow-x: auto;
 }
 
 /* Product Cards */
 .product {
     background: rgba(255, 255, 255, 0.08);
-    padding: 15px;
+    padding: 0px;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.2s ease-in-out;
-    width: 200px; /* Fixed width for consistency */
+    width: 100px; /* Fixed width for consistency */
 }
 
 .product:hover {
@@ -85,23 +79,31 @@ body {
 }
 
 
-/* Fix for Grid Layout */
+/* Default layout for large screens */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Creates a responsive grid for desktop */
+    gap: 15px; /* Space between items */
+    justify-items: right; /* Center items in grid cells */
     padding: 20px;
 }
 
-/* Product Items */
-.product-item {
-    text-align: center;
-    background: rgba(255, 255, 255, 0.07);
-    padding: 10px;
-    border-radius: 8px;
-    transition: transform 0.2s ease-in-out;
+/* Mobile layout (Horizontal scrolling) */
+@media (max-width: 768px) {
+    .product-grid {
+        display: flex; /* Use flexbox on mobile */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        gap: 10px; /* Space between items */
+        padding: 10px 20px;
+    }
+
+    .product-item {
+        flex-shrink: 0; /* Prevent items from shrinking */
+        width: 150px; /* Set width for each item */
+        text-align: center;
+    }
 }
+
 
 .product-item:hover {
     transform: scale(1.03);
@@ -249,3 +251,19 @@ button:hover {
     background: linear-gradient(90deg, #ffd501,#0b540b ,#fd2905, #006fff);
     opacity: 0.7;
 }
+/* Default layout for large screens */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Items in a responsive grid */
+    gap: 20px; /* Space between items */
+    margin-top: 20px;  /* Top margin for spacing */
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* Stack items vertically on mobile */
+        gap: 10px; /* Adjust the gap between items for mobile */
+    }
+}
+
