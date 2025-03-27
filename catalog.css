@@ -50,7 +50,7 @@ body {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping if needed */
     gap: 20px; /* Space between items */
-    padding: 40px;
+    padding: 30px;
     overflow-x: auto;
 }
 
@@ -61,7 +61,7 @@ body {
     border-radius: 10px;
     text-align: center;
     transition: transform 0.2s ease-in-out;
-    width: 100px; /* Fixed width for consistency */
+    width: 120px; /* Fixed width for consistency */
 }
 
 .product:hover {
