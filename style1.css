@@ -439,7 +439,7 @@ html {
 }
 .catalog-preview {
   text-align: center;
-  margin-top: 50px;
+  margin-top: -80px;
 }
 
 .catalog-preview h2 {
@@ -452,21 +452,21 @@ html {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .preview-item img {
-  width: 80px; /* Adjust size */
-  height: 80px;
+  width: 95px; /* Adjust size */
+  height: 95px;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 20px;
 }
 
 /* Button */
 .catalog-preview button {
   background: #45ff07;
   color: black;
-  padding: 12px 24px;
+  padding: 12px 94px;
   font-size: 18px;
   border: none;
   border-radius: 5px;
