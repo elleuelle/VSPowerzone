@@ -19,7 +19,10 @@ body {
     height: 150px;
     cursor: pointer;
 }
-
+.category a {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+}
 
 
 
@@ -31,7 +34,7 @@ body {
 
 /* Category Title */
 .category h2 {
-    text-align: left;
+    text-align: center;
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: white;
